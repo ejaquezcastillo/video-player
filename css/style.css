@@ -49,6 +49,7 @@ body{
     inset-inline: 0;
     display: flex;
     padding: 10;
+    z-index: 100;
     
 }
 
@@ -56,9 +57,13 @@ body{
     flex: 1;
 
 }
-player-overlay{
+
+.player-overlay{
     position: absolute;
     inset: 0;
+    opacity: 0;
+    transition: .3s opacity;
+    
 }
 
 .player:hover .player-overlay{
